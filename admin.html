@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/navigator/">
+    <title>Управление контентом</title>
+     <link rel="stylesheet" href="css/AdminPanel.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Управление контентом</h1>
+        <div class="header-actions">
+            <button class="btn btn-primary" onclick="window.location.href='/navigator/'">Проверка</button>
+            <button class="btn btn-success" onclick="startParser()">Парсер</button>
+            <button class="btn btn-primary" onclick="exportJson()">Выгрузить JSON</button>
+            <button class="btn btn-primary" onclick="changePassword()">Сменить пароль</button>
+            <button class="btn btn-danger" onclick="logout()">Выйти</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Дерево каталога</h3>
+            <div class="search-box">
+                <input type="text" id="treeSearch" placeholder="Поиск элементов...">
+            </div>
+            <div class="tree-container" id="catalogTree"></div>
+        </div>
+
+        <div class="main-content">
+            <div id="statusMessage" class="status-message hidden"></div>
+
+            <div class="tabs">
+                <div class="tab active" data-tab="edit">Редактировать элемент</div>
+                <div class="tab" data-tab="add">Добавить элемент</div>
+            </div>
+
+            <!-- Вкладка редактирования -->
+            <div class="tab-content active" id="editTab">
+                <h3>Редактирование элемента</h3>
+                <p style="color: #666; margin-bottom: 15px;">Выберите элемент в дереве каталога для редактирования</p>
+                
+                <form id="editForm" class="hidden">
+                    <input type="hidden" id="editPath" name="path">
+                    
+                    <div class="form-group">
+                        <label for="editName">Название</label>
+                        <input type="text" id="editName" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="editIcon">Иконка</label>
+                        <select id="editIcon" name="icon">
+                            <option value="">-- Выберите иконку --</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Предпросмотр иконок</label>
+                        <div class="images-grid" id="editImagesGrid"></div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="editPermanent" name="permanent">
+                        <label for="editPermanent">Сделать постоянным элементом</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="editUrl">URL (для файлов)</label>
+                        <input type="text" id="editUrl" name="url" placeholder="https://...">
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Сохранить изменения</button>
+                    <button type="button" class="btn btn-danger" onclick="deleteCurrentItem()">Удалить элемент</button>
+                </form>
+            </div>
+
+            <!-- Вкладка добавления -->
+            <div class="tab-content" id="addTab">
+                <h3>Добавление нового элемента</h3>
+                
+                <form id="addForm">
+                    <div class="form-group">
+                        <label for="addParentPath">Родительская папка</label>
+                        <div class="search-box" style="margin-bottom: 5px;">
+                            <input type="text" id="parentSearch" placeholder="Поиск родительской папки...">
+                        </div>
+                        <input type="text" id="addParentPath" name="parent_path" readonly placeholder="Выберите папку в списке или через поиск">
+                    </div>
+                    <div class="form-group">
+                        <label>Список родителей</label>
+                        <div class="parent-list" id="parentList"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addName">Название</label>
+                        <input type="text" id="addName" name="name" required placeholder="Введите название">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addIcon">Иконка</label>
+                        <select id="addIcon" name="icon">
+                            <option value="">-- Выберите иконку --</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Все доступные иконки</label>
+                        <div class="images-grid" id="addImagesGrid"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Поиск иконок</label>
+                        <div class="search-box">
+                            <input type="text" id="imageSearch" placeholder="Поиск картинок...">
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="addPermanent" name="permanent" checked>
+                        <label for="addPermanent">Сделать постоянным элементом</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="addUrl">URL (опционально, для файлов)</label>
+                        <input type="text" id="addUrl" name="url" placeholder="https://...">
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Добавить элемент</button>
+                </form>
+            </div>
+
+            <!-- Вкладка парсера -->
+            <div class="tab-content" id="parserTab">
+                <h3>Управление парсером</h3>
+                
+                <div id="parserStatus" class="parser-status">
+                    <p><strong>Статус:</strong> <span id="parserStatusText">Загрузка...</span></p>
+                    <p><strong>Последний запуск:</strong> <span id="parserLastRun">-</span></p>
+                </div>
+
+                <button class="btn btn-success" onclick="startParser()">Запустить парсер</button>
+                
+                <hr style="margin: 20px 0;">
+                
+                <h4>Импорт JSON</h4>
+                <div class="form-group" style="margin-top: 15px;">
+                    <label for="importJsonData">JSON данные</label>
+                    <textarea id="importJsonData" rows="10" placeholder='[{"name": "Пример", "icon": "folder.png", "children": []}]'></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="importParentPath">Родительская папка (опционально)</label>
+                    <input type="text" id="importParentPath" placeholder="Путь к папке или выберите из списка">
+                </div>
+                
+                <div class="form-group">
+                    <label>Поиск папки для импорта</label>
+                    <div class="search-box">
+                        <input type="text" id="importParentSearch" placeholder="Поиск родительской папки...">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Список родителей для импорта</label>
+                    <div class="parent-list" id="importParentList"></div>
+                </div>
+                
+                <button class="btn btn-success" onclick="importJsonData()">Импортировать JSON</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scriptAdmin.js"></script>
+</body>
+</html>

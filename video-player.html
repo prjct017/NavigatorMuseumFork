@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/navigator/">
+    <title>Просмотр видео</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .video-container {
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .error-message {
+            background: #fee;
+            color: #c00;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #fcc;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .loading {
+            text-align: center;
+            color: white;
+            padding: 40px;
+            font-size: 18px;
+        }
+        
+        .loading::after {
+            content: '';
+            animation: dots 1.5s infinite;
+        }
+        
+        @keyframes dots {
+            0%, 20% { content: '.'; }
+            40% { content: '..'; }
+            60%, 100% { content: '...'; }
+        }
+        
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .video-container {
+                max-width: 100%;
+            }
+            
+            video {
+                max-height: 70vh;
+            }
+            
+            button {
+                padding: 8px 15px !important;
+                font-size: 13px !important;
+            }
+        }
+        
+        /* Мобильные телефоны (до 480px) */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            video {
+                max-height: 60vh;
+            }
+            
+            button {
+                padding: 6px 12px !important;
+                font-size: 12px !important;
+                position: fixed !important;
+                top: 10px !important;
+                left: 50% !important;
+                transform: translateX(-50%) !important;
+                width: auto !important;
+                max-width: 200px !important;
+            }
+            
+            .error-message {
+                padding: 15px;
+                font-size: 14px;
+            }
+        }
+        
+        /* Планшеты (769px - 1024px) */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            video {
+                max-height: 75vh;
+            }
+        }
+        
+        /* Большие экраны (от 1920px) */
+        @media (min-width: 1920px) {
+            video {
+                max-height: 85vh;
+            }
+            
+            .error-message {
+                max-width: 800px;
+                padding: 30px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="loading" class="loading">Загрузка видео</div>
+    
+    <div style="position: fixed; top: 20px; left: 20px; z-index: 100;">
+        <button onclick="goBackToCatalog()" style="background: rgba(255,255,255,0.2); color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 14px;">← Назад к каталогу</button>
+    </div>
+    
+    <div id="error" class="error-message" style="display: none;"></div>
+    
+    <div class="video-container" id="videoContainer" style="display: none;">
+        <video id="videoPlayer" controls preload="metadata">
+            Ваш браузер не поддерживает воспроизведение видео.
+        </video>
+    </div>
+    
+    <script>
+        // Получаем параметры из URL
+        const urlParams = new URLSearchParams(window.location.search);
+        let videoUrl = urlParams.get('url');
+
+        console.log('Video player loaded, URL param:', videoUrl);
+
+        if (!videoUrl) {
+            showError('URL видео не указан.');
+            hideLoading();
+        } else {
+            // Очищаем URL от лишних пробелов
+            videoUrl = videoUrl.trim();
+            
+            console.log('Clean video URL:', videoUrl);
+            
+            // Используем прокси для открытия видео в браузере
+            // URL уже закодирован в параметре, декодируем его перед использованием
+            let decodedVideoUrl = videoUrl;
+            try {
+                decodedVideoUrl = decodeURIComponent(videoUrl);
+            } catch (e) {}
+            
+            const proxyUrl = decodedVideoUrl;
+
+            console.log('Proxy URL:', proxyUrl);
+
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoContainer = document.getElementById('videoContainer');
+
+            // Устанавливаем источник видео через прокси
+            videoPlayer.src = proxyUrl;
+            videoPlayer.setAttribute('playsinline', '');
+            videoPlayer.setAttribute('webkit-playsinline', '');
+
+            // Определяем тип видео по расширению
+            let cleanUrl = '';
+            try {
+                cleanUrl = decodeURIComponent(videoUrl);
+            } catch (e) {
+                cleanUrl = videoUrl;
+            }
+            
+            const extMatch = cleanUrl.match(/\.(mp4|webm|ogg|mov|avi|mkv|flv|wmv|m4v)\s*$/i);
+            if (extMatch) {
+                const ext = extMatch[1].toLowerCase();
+                const mimeTypes = {
+                    'mp4': 'video/mp4',
+                    'webm': 'video/webm',
+                    'ogg': 'video/ogg',
+                    'mov': 'video/quicktime',
+                    'avi': 'video/x-msvideo',
+                    'mkv': 'video/x-matroska',
+                    'flv': 'video/x-flv',
+                    'wmv': 'video/x-ms-wmv',
+                    'm4v': 'video/x-m4v'
+                };
+                if (mimeTypes[ext]) {
+                    console.log('Setting MIME type:', mimeTypes[ext]);
+                    videoPlayer.setAttribute('type', mimeTypes[ext]);
+                }
+            }
+
+            // Принудительно запускаем воспроизведение после загрузки метаданных
+            videoPlayer.addEventListener('loadedmetadata', function() {
+                console.log('Video metadata loaded. Duration:', videoPlayer.duration, 'sec');
+                hideLoading();
+                videoContainer.style.display = 'block';
+                // Пытаемся запустить воспроизведение (может быть заблокировано браузером без взаимодействия)
+                videoPlayer.play().catch(e => console.log('Автовоспроизведение заблокировано:', e));
+            });
+
+            videoPlayer.addEventListener('error', function(e) {
+                console.error('Video error event:', e);
+                console.error('Video element error:', videoPlayer.error);
+                hideLoading();
+                let errorMsg = 'Ошибка загрузки видео. ';
+
+                if (videoPlayer.error) {
+                    switch(videoPlayer.error.code) {
+                        case 1: errorMsg += 'Загрузка прервана.'; break;
+                        case 2: errorMsg += 'Ошибка сети.'; break;
+                        case 3: errorMsg += 'Видео повреждено или формат не поддерживается.'; break;
+                        case 4: errorMsg += 'Формат видео не поддерживается браузером.'; break;
+                    }
+                }
+
+                showError(errorMsg);
+            });
+
+            videoPlayer.addEventListener('waiting', function() {
+                console.log('Video buffering...');
+                document.getElementById('loading').textContent = 'Буферизация...';
+                document.getElementById('loading').style.display = 'block';
+            });
+
+            videoPlayer.addEventListener('playing', function() {
+                console.log('Video playing');
+                hideLoading();
+            });
+
+            // Запускаем загрузку видео
+            console.log('Starting video load...');
+            videoPlayer.load();
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').style.display = 'none';
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('error');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        }
+
+        function goBackToCatalog() {
+            // Проверяем, есть ли referrer (страница, с которой пришли)
+            if (document.referrer) {
+                window.location.href = document.referrer;
+            } else {
+                // Если referrer нет, переходим на главную страницу
+                window.location.href = '/navigator/index.html';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,570 @@
+{
+  "name": "ВЕБ-РЕСУРСЫ МУЛЬТИМЕДИЙНОГО КОНТЕНТА ПО НАПРАВЛЕНИЯМ",
+  "icon": "folder.png",
+  "children": [
+    {
+      "name": "ВОЕННО-ПАТРИОТИЧЕСКОЕ",
+      "icon": "https://vm-ftp.anosov.ru/vm/фото/ppp.png",
+      "children": [
+        {
+          "name": "КНИГА ПАМЯТИ ВЕЛИКАЯ ОТЕЧЕСТВЕННАЯ ВОЙНА(1941-1945)",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/vov.jpg",
+          "children": [],
+          "url": "https://vm.anosov.ru/book/000000088/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "КНИГА ПАМЯТИ АФГАНСКАЯ ВОЙНА И ЧЕЧЕНСКИЙ КОНФЛИКТ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/afgan-chechnya.jpg",
+          "children": [],
+          "url": "https://vm.anosov.ru/book/000000089/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "КНИГА ПАМЯТИ СПЕЦИАЛЬНАЯ ВОЕННАЯ ОПЕРАЦИЯ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/svo.jpg",
+          "children": [],
+          "url": "https://vm.anosov.ru/book/000000090/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "СКВЕР АНОСОВЕЦ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/skver anosovtsev.jpg",
+          "children": [],
+          "url": "https://vk.com/video424702883_456239420",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true,
+          "permanent": true
+        },
+        {
+          "name": "СТАЛИНГРАД В ИСТОРИИ ЗЛАТОУСТА",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/stalingrad v istorii zlatousta.jpg",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/oxSuTKIv?inline=true",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true,
+          "permanent": true
+        }
+      ],
+      "url": null,
+      "modified": "2026-06-10 10:00",
+      "isEmpty": false
+    },
+    {
+      "name": "НАГРАДНАЯ ДОКУМЕНТАЛИСТИКА",
+      "icon": "https://vm-ftp.anosov.ru/vm/фото/74-05.jpg",
+      "children": [
+        {
+          "name": "КНИГА ПОЧЁТА(1976 - 2005)",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/74-05.jpg",
+          "children": [],
+          "url": "https://vm.anosov.ru/book/000000018/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "СОЦИАЛИСТИЧЕСКОЕ СОРЕВНОВАНИЕ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/sots-sorevnovania.jpg",
+          "children": [],
+          "url": "https://vm.anosov.ru/book/000000019/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "НАШИ ВЕТЕРАНЫ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/nashi veterany.jpg",
+          "children": [],
+          "url": "https://vm.anosov.ru/book/100000002/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "НАГРАДНЫЕ МАТЕРИАЛЫ 2018-2024Г.Г",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/diplomi.jpg",
+          "children": [],
+          "url": "https://vm.anosov.ru/book/100000004/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true,
+          "permanent": true
+        },
+        {
+          "name": "НАША ГОРДОСТЬ ВЫПУСКНИКИ(1938-2016Г.Г)",
+          "icon": "https://vm-ftp.anosov.ru/vm/Наша гордость - выпускники!/1930-1940 - формирование советской системы образования/1938 год/Чертежно-конструкторское отделение1.png",
+          "children": [],
+          "url": "http://192.168.3.78:8080/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true,
+          "permanent": true
+        }
+      ],
+      "url": null,
+      "modified": "2026-06-10 10:00",
+      "isEmpty": false
+    },
+    {
+      "name": "ИНКЛЮЗИВНОЕ ОБУЧЕНИЕ",
+      "icon": "https://vm-ftp.anosov.ru/vm/фото/OVZ.png",
+      "children": [
+        {
+          "name": "ВИДЕО РОЛИК О ЛВОЗ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/lovz.jpg",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/Hy8eTeKC?inline=true",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true,
+          "permanent": true
+        },
+        {
+          "name": "САЙТ \"ПРЕОДОЛЕНИЯ\"",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/preodolenie.jpg",
+          "children": [],
+          "url": "https://s.anosov.ru/overcomeStud",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        }
+      ],
+      "url": null,
+      "modified": "2026-06-10 10:00",
+      "isEmpty": false
+    },
+    {
+      "name": "ЭКОЛОГИЧЕСКОЕ",
+      "icon": "https://vm-ftp.anosov.ru/vm/фото/ecology.png",
+      "children": [
+        {
+          "name": "ВСЕРОССИЙСКИЙ КОНКУРС\"ЭКОЛОГИЧЕСКИЙ МАРАФОН\"",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/konkurs.jpg",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/6DJOwyU5?inline=true",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true,
+          "permanent": true
+        },
+        {
+          "name": "ЭКО-ПОРТАЛ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/eco-portal.png",
+          "children": [],
+          "url": "https://eco.anosov.ru",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        }
+      ],
+      "url": null,
+      "modified": "2026-06-10 10:00",
+      "isEmpty": false
+    },
+    {
+      "name": "НCO \"ИНТЕЛЛЕКТУАЛ\"",
+      "icon": "https://vm-ftp.anosov.ru/vm/фото/proektoria.jpg",
+      "children": [
+        {
+          "name": "ФОРУМ \"ПРОКТОРИЯ\" Г.ЯРОСЛАВЛЬ 2021Г.",
+          "icon": "folder.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/IVpf0tJw?inline=true",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true,
+          "permanent": true
+        },
+        {
+          "name": "ЭЛЕКТРОННАЯ КНИГА \"АНОСОВЕЦ ОПЕРЕЖАЮЩИЙ ВРЕМЯ\"",
+          "icon": "",
+          "children": [],
+          "url": "https://vm.anosov.ru/book/000000001",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "КНИГА \"АНОСОВЕЦ ОПЕРЕЖАЮЩИЙ ВРЕМЯ\" ТЕКСТОВЫЙ ФОРМАТ",
+          "icon": "",
+          "children": [],
+          "url": "",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "КНИГА \"НАШИ ПРОЕКТЫ\"",
+          "icon": "",
+          "children": [],
+          "url": "https://vm.anosov.ru/navigate_old/knigechka/index.html",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        }
+      ],
+      "url": null,
+      "modified": "2026-06-10 10:00",
+      "isEmpty": false
+    },
+    {
+      "name": "ПАРАД ЗВЁЗД",
+      "icon": "https://vm-ftp.anosov.ru/vm/фото/image.png",
+      "children": [],
+      "url": "http://192.168.3.78:5001/",
+      "modified": "2026-06-10 10:00",
+      "isEmpty": true
+    },
+    {
+      "name": "ПОДКАСТЫ_ЗЛАТИК",
+      "icon": "https://vm-ftp.anosov.ru/vm/фото/СайтПодкасты.PNG",
+      "children": [
+        {
+          "name": "ПОДКАСТ ЗЛАТИК ЛИТЕРАТУРА",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/ПодкастЛитература.png",
+          "children": [],
+          "url": "https://vm.anosov.ru/navigate_old/video/IMG_9286.mp4",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true,
+          "permanent": true
+        },
+        {
+          "name": "Сайт",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/СайтПодкасты.PNG",
+          "children": [],
+          "url": "http://192.168.3.78:3000/#/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "ИСТОРИЯ СОЗДАНИЯ КНИГИ \"ПАМЯТИ ПОГИБШИХ НА СВО\"",
+          "icon": "https://vm-ftp.anosov.ru/vm/Подкасты_Аносовец/Подкаст2/подкаст книга.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/8N8By2ej?inline=true"
+        },
+        {
+          "name": "ИСТОРИЯ ВОЗНИКНОВЕНИЯ КВН",
+          "icon": "https://vm-ftp.anosov.ru/vm/Подкасты_Аносовец/Подкаст3/IMG_3460.png",
+          "children": [],
+          "url": "https://vm-fb.anosov.ru/api/public/dl/WZurdQEc?inline=true"
+        }
+      ],
+      "url": null,
+      "modified": "2026-06-10 10:00",
+      "isEmpty": false
+    },
+    {
+      "name": "ИСТОРИЧЕСКИЕ ВЕХИ КОЛЛЕДЖА",
+      "icon": "https://vm-ftp.anosov.ru/vm/фото/ZlatIK.png",
+      "children": [
+        {
+          "name": "КНИГА \"ПИСЬМА ВЫПУСКНИКОВ\"",
+          "icon": "",
+          "children": [],
+          "url": "",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "КНИГА \"ВОССТАНОВИТЬ ИЛИ СТРОИТЬ!\"",
+          "icon": "",
+          "children": [],
+          "url": "",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "О КОЛЛЕДЖЕ",
+          "icon": "",
+          "children": [
+            {
+              "name": "ВИДЕО К 115-ЛЕТИЮ КОЛЛЕДЖА",
+              "icon": "https://vm-ftp.anosov.ru/vm/фото/img-20220930-wa0003_0.jpg",
+              "children": [],
+              "url": "",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true
+            }
+          ],
+          "url": null,
+          "modified": "2026-06-10 10:00",
+          "isEmpty": false
+        },
+        {
+          "name": "САЙТ (2020-2024ГГ.)",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/ZlatIK.png",
+          "children": [],
+          "url": "https://vm.anosov.ru",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true,
+          "permanent": true
+        },
+        {
+          "name": "ВИРТУАЛЬНЫЙ МУЗЕЙ (1907-2019гг.)",
+          "icon": "",
+          "children": [],
+          "url": "https://museum.anosov.ru/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "Электронный помошник",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/иконка для приложения пнг_Монтажная область 2.png",
+          "children": [],
+          "url": "page/qrCodeДляМобилки.png",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "ЭКСПОНАТЫ",
+          "icon": "https://vm-ftp.anosov.ru/vm/Экспонаты/mashinka.jpg",
+          "children": [],
+          "url": "https://vm.anosov.ru/exponates/"
+        }
+      ],
+      "url": null,
+      "modified": "2026-06-10 10:00",
+      "isEmpty": false
+    },
+    {
+      "name": "СПЕЦИАЛЬНОСТИ",
+      "icon": "https://vm-ftp.anosov.ru/vm/фото/Специальности.png",
+      "children": [
+        {
+          "name": "ИНФОРМАЦИОННЫЕ СИСТЕМЫ И ПРОГРАММИРОВАНИЕ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/ИС.png",
+          "children": [
+            {
+              "name": "КНИГА \"10 ЛЕТ СПЕЦИАЛЬНОСТИ\"",
+              "icon": "https://vm-ftp.anosov.ru/vm/фото/tvorchesky put.jpg",
+              "children": [],
+              "url": "https://vm.anosov.ru/book/100000001/",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true
+            },
+            {
+              "name": "20 ЛЕТ СПЕЦИАЛЬНОСТИ \"ПРОГРАММИРОВАНИЕ В КОМПЬЮТЕРНЫХ СИСТЕМАХ\"",
+              "icon": "https://vm-ftp.anosov.ru/vm/фото/20 let.jpg",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/-PfbSRfm?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            },
+            {
+              "name": "ИТОГ \"ЗЛАТИК\"",
+              "icon": "https://vm-ftp.anosov.ru/vm/фото/itog zlatik.jpg",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/MrZTnUHb?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            },
+            {
+              "name": "РАЗРАБОТКА МИНИ-ПРАКТИК",
+              "icon": "https://vm-ftp.anosov.ru/vm/фото/mini-praktiki.jpg",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/Kqf_omYr?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            },
+            {
+              "name": "ЦИФРОВЫЕ ТЕХНОЛОГИИ В РЕВЕРСИВНОМ ИНЖИНЕРИНГЕ",
+              "icon": "https://vm-ftp.anosov.ru/vm/фото/cifrovie technologii v reversivnom inginiringe.jpg",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/0ul7MQCZ?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            },
+            {
+              "name": "ЗАЧЁТКА 2024",
+              "icon": "https://vm-ftp.anosov.ru/vm/фото/Зачётка 2024.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/5t_9HkmD?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            },
+            {
+              "name": "ЗАЧЁТКА 2026",
+              "icon": "https://vm-ftp.anosov.ru/vm/фото/ИС.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/6HbWWPTE?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            },
+            {
+              "name": "РЕВЕРСИВНЫЙ ИНЖИНЕРИНГ",
+              "icon": "",
+              "children": [],
+              "url": "https://vm.anosov.ru/reversiv",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true
+            }
+          ],
+          "url": null,
+          "modified": "2026-06-10 10:00",
+          "isEmpty": false
+        },
+        {
+          "name": "ОПЕРАЦИОННАЯ ДЕЯТЕЛЬНОСТЬ В ЛОГИСТИКЕ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/Логисты.png",
+          "children": [
+            {
+              "name": "ЗАЧЁТКА",
+              "icon": "https://vm-ftp.anosov.ru/vm/фото/image-57.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/Tolc1LJG?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            }
+          ],
+          "url": null,
+          "modified": "2026-06-10 10:00",
+          "isEmpty": false
+        },
+        {
+          "name": "ТЕХНОЛОГИЯ МАШИНОСТРОЕНИЯ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/TM.png",
+          "children": [
+            {
+              "name": "ЗАЧЁТКА",
+              "icon": "folder.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/fu-gv87V?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            }
+          ],
+          "url": null,
+          "modified": "2026-06-10 10:00",
+          "isEmpty": false
+        },
+        {
+          "name": "АДДИТИВНЫЕ ТЕХНОЛОГИИ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/АТ.png",
+          "children": [
+            {
+              "name": "ЗАЧЁТКА",
+              "icon": "folder.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/mYfjmA3q?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            }
+          ],
+          "url": null,
+          "modified": "2026-06-10 10:00",
+          "isEmpty": false
+        },
+        {
+          "name": "ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ И РЕМОНТ ДВИГАТЕЛЕЙ, СИСТЕМ И АГРЕГАТОВ АВТОМОБИЛЕЙ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/2026-03-16_10-11-34.png",
+          "children": [
+            {
+              "name": "ЗАЧЁТКА",
+              "icon": "folder.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/rarxDxfX?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            }
+          ],
+          "url": null,
+          "modified": "2026-06-10 10:00",
+          "isEmpty": false
+        },
+        {
+          "name": "ЭКСПЛУАТАЦИЯ БЕСПИЛОТНЫХ АВИАЦИОННЫХ СИСТЕМ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/img_9ab372e60e32ad33fa96ec7734197327.jpg",
+          "children": [
+            {
+              "name": "ЗАЧЁТКА",
+              "icon": "",
+              "children": [],
+              "url": "",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true
+            }
+          ],
+          "url": null,
+          "modified": "2026-06-10 10:00",
+          "isEmpty": false
+        },
+        {
+          "name": "ЮРИСПРУДЕНЦИЯ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/6958f715e96de430544278.jpg",
+          "children": [
+            {
+              "name": "ЗАЧЁТКА",
+              "icon": "folder.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/_0e-Fnlz?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            }
+          ],
+          "url": null,
+          "modified": "2026-06-10 10:00",
+          "isEmpty": false
+        },
+        {
+          "name": "ЭКСПЛУАТАЦИЯ И ОБСЛУЖИВАНИЕ ЭЛЕКТРИЧЕСКОГО И ЭЛЕКТРОМЕХАНИЧЕСКОГО ОБОРУДОВАНИЯ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/2026-03-16_10-20-22.png",
+          "children": [
+            {
+              "name": "ЗАЧЁТКА",
+              "icon": "folder.png",
+              "children": [],
+              "url": "https://vm-fb.anosov.ru/api/public/dl/qlo4fjXU?inline=true",
+              "modified": "2026-06-10 10:00",
+              "isEmpty": true,
+              "permanent": true
+            }
+          ],
+          "url": null,
+          "modified": "2026-06-10 10:00",
+          "isEmpty": false
+        }
+      ],
+      "url": null,
+      "modified": "2026-06-10 10:00",
+      "isEmpty": false
+    },
+    {
+      "name": "AI-АССИСТЕНТЫ",
+      "icon": "https://vm-ftp.anosov.ru/vm/фото/AI.jpg",
+      "children": [
+        {
+          "name": "AI- АССИСТЕНТ 09.02.07 ИС И П",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/НейросетьИС.PNG",
+          "children": [],
+          "url": "https://cab44.anosov.ru/basicsit/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "AI- АССИСТЕНТ 15.02.16 ТМ",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/54436346342н7.PNG",
+          "children": [],
+          "url": "https://tm.anosov.ru",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        },
+        {
+          "name": "AI- АССИСТЕНТ 25.02.08 ЭБАС",
+          "icon": "https://vm-ftp.anosov.ru/vm/фото/Беспилотник.PNG",
+          "children": [],
+          "url": "https://vm.anosov.ru/bpla/",
+          "modified": "2026-06-10 10:00",
+          "isEmpty": true
+        }
+      ],
+      "url": null,
+      "modified": "2026-06-10 10:00",
+      "isEmpty": false
+    }
+  ],
+  "url": null,
+  "modified": "2026-05-11 15:16",
+  "isEmpty": false
+}

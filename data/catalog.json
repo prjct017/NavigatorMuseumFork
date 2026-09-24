@@ -179,11 +179,12 @@
         },
         {
           "name": "КНИГА \"АНОСОВЕЦ ОПЕРЕЖАЮЩИЙ ВРЕМЯ\" ТЕКСТОВЫЙ ФОРМАТ",
-          "icon": "",
+          "icon": "folder.png",
           "children": [],
-          "url": "",
+          "url": "/",
           "modified": "2026-06-10 10:00",
-          "isEmpty": true
+          "isEmpty": true,
+          "permanent": true
         },
         {
           "name": "КНИГА \"НАШИ ПРОЕКТЫ\"",
@@ -250,19 +251,21 @@
       "children": [
         {
           "name": "КНИГА \"ПИСЬМА ВЫПУСКНИКОВ\"",
-          "icon": "",
+          "icon": "folder.png",
           "children": [],
-          "url": "",
+          "url": "https://vm-ftp.anosov.ru/vm/книги/Книга-Выпусников/",
           "modified": "2026-06-10 10:00",
-          "isEmpty": true
+          "isEmpty": true,
+          "permanent": true
         },
         {
           "name": "КНИГА \"ВОССТАНОВИТЬ ИЛИ СТРОИТЬ!\"",
-          "icon": "",
+          "icon": "folder.png",
           "children": [],
           "url": "",
           "modified": "2026-06-10 10:00",
-          "isEmpty": true
+          "isEmpty": true,
+          "permanent": true
         },
         {
           "name": "О КОЛЛЕДЖЕ",
